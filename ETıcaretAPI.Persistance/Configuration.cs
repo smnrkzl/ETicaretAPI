@@ -18,6 +18,7 @@ namespace ETıcaretAPI.Persistance
                 //D:\ETıcaretAPI\ETıcaretAPI.Persistance
                 configurationManager.AddJsonFile("appsettings.json");
                 return configurationManager.GetConnectionString("SQLSERVER");
+                //desk
             }
         }
 
