@@ -22,7 +22,7 @@ namespace ETıcaretAPI.Persistance.Contexts
         //{
         //    optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=ETıcaretAPIDb;Integrated Security=true");
         //}      
-
+        //push a tıklamak gerekiyordu öyle hatırlıyorum evet bende onu arıuorum
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
