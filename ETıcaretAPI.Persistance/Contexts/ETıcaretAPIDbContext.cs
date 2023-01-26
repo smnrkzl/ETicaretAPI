@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ETıcaretAPI.Persistance.Contexts
 {
-    //package manager console kısmında persistance seçmemiz gerekmiyor mudu evet
+    
     public class ETıcaretAPIDbContext : DbContext
     {
         public ETıcaretAPIDbContext(DbContextOptions options) : base(options)
@@ -18,12 +18,7 @@ namespace ETıcaretAPI.Persistance.Contexts
            //// return new ETıcaretAPIDbContext(dbContextOptionsBuilder.Options);
         }
 
-        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=ETıcaretAPIDb;Integrated Security=true");
-        //}      
-        //push a tıklamak gerekiyordu öyle hatırlıyorum evet bende onu arıuorum
-        //şimi yazak buraya bişey kaydet meliyiz
+        
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Customer> Customers { get; set; }

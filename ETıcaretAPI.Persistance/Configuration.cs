@@ -15,10 +15,10 @@ namespace ETıcaretAPI.Persistance
             {
                 ConfigurationManager configurationManager = new();
                 configurationManager.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../../ETıcaretAPI/ETıcaretAPI.API"));
-                //D:\ETıcaretAPI\ETıcaretAPI.Persistance
+                
                 configurationManager.AddJsonFile("appsettings.json");
                 return configurationManager.GetConnectionString("SQLSERVER");
-                //desk
+                
             }
         }
 
